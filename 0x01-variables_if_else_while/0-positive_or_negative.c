@@ -5,9 +5,7 @@
 /**
  * main -  program assigning random number to  variable n each time its executed
  *
- * Return: if the number is greater than 0: is positive
- * if the number is 0: is zero
- * if the number is less than 0: is negativ
+ * Return: corret output
  */
 int main(void)
 {
