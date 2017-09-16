@@ -10,7 +10,7 @@ int main(void)
 
 	while (sd < 10)
 	{
-		printf("%i",sd);
+		printf("%i", sd);
 		sd++;
 	}
 	putchar('\n');
