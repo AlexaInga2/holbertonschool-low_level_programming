@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main -  program assigning random number to  variable n each time its executed
+ * main -  program assigning n to variable n each executed time
  *
- * Return: corret output
+ * Return: 0 (corret output)
  */
 int main(void)
 {
