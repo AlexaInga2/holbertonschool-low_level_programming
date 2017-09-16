@@ -16,11 +16,11 @@ int main(void)
 	}
 
 	l = 'a';
-        while (l <= 'f')
-        {
-                putchar(l);
-                l++;
-        }
+	while (l <= 'f')
+	{
+		putchar(l);
+		l++;
+	}
 	putchar('\n');
 	return (0);
 }
