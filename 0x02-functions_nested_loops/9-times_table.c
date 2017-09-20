@@ -19,7 +19,8 @@ void times_table(void)
 			_putchar(' ');
 			_putchar(n / 10 ? n / 10 + '0' : ' ');
 			_putchar(n % 10 + '0');
-			_putchar(',');
+			if (j < 9)
+				_putchar(',');
 		}
 	}
 }
