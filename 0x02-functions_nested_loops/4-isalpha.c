@@ -2,6 +2,7 @@
 #include <ctype.h>
 /**
  * _isalpha -  checks for alphabetic character.
+ * @c: parameter to check if alphebetical charater
  *
  * Return: 1 if c a letter, lowercase, or uppercase, otherwise 0
  */
