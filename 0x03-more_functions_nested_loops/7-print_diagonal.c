@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print_diagnoal - draws a straight line in the terminal
+ * print_diagonal - draws a straight line in the terminal
  * @n: parameter for gaging '_'
  *
  * Return: 0
