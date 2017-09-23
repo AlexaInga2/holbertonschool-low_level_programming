@@ -1,13 +1,14 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * main -
+ * main - Entry point
  *
- * Return - 0
+ * Return: Fizz, Buzz, or FizzBuzz
  */
 int main(void)
 {
 	int i;
+
 	for (i = 0; i <= 100; i++)
 	{
 		if ((i % 3) == 0 && (i % 5) == 0)
