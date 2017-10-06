@@ -47,6 +47,6 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int find_sqrt(int s, int n); /* my own function */
-int find_prime(int div, int n); /* my own function */
-int find_prime(int n, int div);
+int find_prime(int n, int div); /* my own function */
 int _strlen(char *s);
+int test_palindrome(char *s, char *e); /* my own function */

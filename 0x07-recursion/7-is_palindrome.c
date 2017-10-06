@@ -13,6 +13,23 @@ int _strlen(char *s) /* reusing old function */
 
 #include "holberton.h"
 /**
+ * test_palindrome - checks string w/ itself
+ * @s: original string
+ * @e: end of string
+ *
+ * Return: 1 if a palindrome, 0 if not
+ */
+int test_palindrome(char *s, char *e)
+{
+	if (*s != *e)
+		return (0);
+	if (s >= e)
+		return (1);
+	return (test_palindrome(++s, --e));
+}
+
+#include "holberton.h"
+/**
  * is_palindrome -  returns 1 if a string is a palindrome and 0 if not
  * An empty string is a palindrome
  * @s: number to check
@@ -22,7 +39,7 @@ int _strlen(char *s) /* reusing old function */
 int is_palindrome(char *s)
 {
 
-	int l = _strlen(s) - 1;
+	int le = _strlen(s) - 1;
 
-	return (is_palindrome(s, s + 1));
+	return (test_palindrome(s, s + le));
 }
