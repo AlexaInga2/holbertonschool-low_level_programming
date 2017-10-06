@@ -49,3 +49,4 @@ int is_palindrome(char *s);
 int find_sqrt(int s, int n); /* my own function */
 int find_prime(int div, int n); /* my own function */
 int find_prime(int n, int div);
+int _strlen(char *s);
