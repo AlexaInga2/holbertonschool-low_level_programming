@@ -22,7 +22,7 @@ char *_strdup(char *str)
 		;
 	++i;
 /* allocate memory for str2 */
-	s = (char*) malloc((i + 1) * sizeof(char));
+	s = (char *) malloc((i + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);
 /* copy str to str2 */
@@ -31,13 +31,3 @@ char *_strdup(char *str)
 	s[i] = s[i];
 	return (s);
 }
-
-/**
- * OBJECTIVES:
- * 1. Check if STR is NULL
- * 2. Get size of STR
- * 3. allocate memory for new string (str2)
- * 4. if malloc erred, return NULL
- * 5. copy STR to str2 *
- * 6. return str on !
- */
