@@ -1,5 +1,7 @@
 #include "lists.h"
 #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strlen - calculates  the  length  of  the string s, excluding '\0' byte
  * @str: string to find length of
