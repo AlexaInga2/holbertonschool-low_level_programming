@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _strdup - returns a pointer to a new string which is a duplicate of the
- * string str. New string memory is obtained w/ malloc, and freed with free
+ * _strdup - returns a pointer to a new string &  duplicate of the
+ * string str. New string memory obtained w/ malloc & freed with free
  * @str: string to be copied
  *
  * Return: NULL if str = NULL. Success = _strdup returns a pointer to
