@@ -18,15 +18,15 @@ char *_strdup(char *str)
 		return (NULL);
 
 /* get the size of string1 */
-	for (i = 0; str[i]; ++i)
+	for (i = 0; str[i]; i++)
 		;
-	++i;
+	i++;
 /* allocate memory for str2 */
 	s = (char *) malloc((i + 1) * sizeof(char));
 	if (s == NULL)
-		return (NULL);
+		return (s);
 /* copy str to str2 */
-	for (i = 0; str[i]; ++i)
+	for (i = 0; str[i]; i++)
 		s[i] = str[i];
 	s[i] = s[i];
 	return (s);
