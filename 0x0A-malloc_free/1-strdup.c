@@ -20,7 +20,6 @@ char *_strdup(char *str)
 /* get the size of string1 */
 	for (i = 0; str[i]; i++)
 		;
-	i++;
 /* allocate memory for str2 */
 	s = (char *) malloc((i + 1) * sizeof(char));
 	if (s == NULL)
