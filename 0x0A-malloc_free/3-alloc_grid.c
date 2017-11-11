@@ -11,7 +11,7 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int c, r;
+	int col, row;
 	int **grid = NULL;
 
 	if (width > 0 && height > 0)
@@ -19,21 +19,25 @@ int **alloc_grid(int width, int height)
 		grid = malloc(sizeof(int *) * height);
 		if (grid == NULL)
 			return(NULL);
-		for (c = 0; c < height; c++)
+		for (row = 0; row < height; row++)
 		{
-			grid[r] = malloc(sizeof(int *) * width);
-			if (grid[r] == NULL)
+			grid[row] = malloc(sizeof(int) * width);
+			if (grid[row] == NULL)
 			{
-				for (r = c; r >= 0; r--)
-					free(grid[r]);
+				for (col = row; col >= 0; col--)
+					free(grid[col]);
+				free(grid);
+				return (NULL);
 			}
 		}
-		for (c = 0; c < width; c++)
-			grid[c][r] = 0;
+		for (row = 0; row < height; row++)
+		{
+			for (col = 0; col < width; col++)
+			grid[row][col] = 0;
+		}
 	}
 	return (grid);
 }
-
 /**
  * check if height or width is 0
  * allocate memory to for each row, which are pointters to arrarys of type int
