@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	{
 		grid = malloc(sizeof(int *) * height);
 		if (grid == NULL)
-			return(NULL);
+			return (NULL);
 		for (row = 0; row < height; row++)
 		{
 			grid[row] = malloc(sizeof(int) * width);
@@ -38,7 +38,3 @@ int **alloc_grid(int width, int height)
 	}
 	return (grid);
 }
-/**
- * check if height or width is 0
- * allocate memory to for each row, which are pointters to arrarys of type int
- */
