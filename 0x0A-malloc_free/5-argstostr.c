@@ -19,10 +19,12 @@ char *argstostr(int ac, char **av)
 	{
 		for (count = 0; av[index][count]; count++)
 			;
-		sum = count + 1;
+		sum = sum + count + 1;
 	}
 	nptr = malloc(sum * sizeof(char) + 1);
-
+	if (nptr == NULL)
+		return (NULL);
+	sum = 0;
 	for (index = 0; index < ac; index++)
 	{
 		for (count = 0; av[index][count]; count++)
